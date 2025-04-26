@@ -1,10 +1,10 @@
-This is the complete implementation of a web application for English speaking practice featuring an AI chatbot.
-The project is accessible at:
+This is the complete implementation of a web application for English speaking practice featuring an AI chatbot.<br>
+The project is accessible at:<br>
 🔗 **[Web App URL](https://fyp-frontend-629590115382.asia-northeast1.run.app/)**
 
 ## Deployment
-This project is deployed using Google Cloud Run. The following commands are use to deploy the frontend and backend containers:
-Frontend:
+This project is deployed using Google Cloud Run. The following commands are use to deploy the frontend and backend containers:<br>
+Frontend:<br>
 gcloud run deploy [SERVICE_NAME] \
   --image [IMAGE_URL] \
   --region [REGION] \
@@ -14,7 +14,7 @@ gcloud run deploy [SERVICE_NAME] \
   --port 3001 \
   --set-env-vars="^@^VITE_ALLOWED_HOSTS=[ALLOWED_HOSTS]"
 
-Backend:
+Backend:<br>
 gcloud run deploy [SERVICE_NAME] \
   --image [IMAGE_URL] \
   --region [REGION] \
