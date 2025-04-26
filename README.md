@@ -3,8 +3,14 @@ The project is accessible at:<br>
 🔗 **[Web App URL](https://fyp-frontend-629590115382.asia-northeast1.run.app/)**
 
 ## Deployment
+To start all services, run:
+```bash
+docker-compose up --build
+```
+
 This project is deployed using Google Cloud Run. The following commands are use to deploy the frontend and backend containers:<br>
 Frontend:<br>
+```bash
 gcloud run deploy [SERVICE_NAME] \
   --image [IMAGE_URL] \
   --region [REGION] \
@@ -13,8 +19,10 @@ gcloud run deploy [SERVICE_NAME] \
   --project=[PROJECT_ID] \
   --port 3001 \
   --set-env-vars="^@^VITE_ALLOWED_HOSTS=[ALLOWED_HOSTS]"
+```
 
 Backend:<br>
+```bash
 gcloud run deploy [SERVICE_NAME] \
   --image [IMAGE_URL] \
   --region [REGION] \
@@ -23,6 +31,7 @@ gcloud run deploy [SERVICE_NAME] \
   --project=[PROJECT_ID] \
   --port 3000 \
   --update-secrets SECRETS=[SECRET_NAME]:latest
+```
 
 ### Secrets
 The backend requires the following secrets to run. Store the secrets as a single JSON file in Google Secret Manager before deployment.
