@@ -34,7 +34,7 @@ gcloud run deploy [SERVICE_NAME] \
 ```
 
 ### Secrets
-The backend requires the following secrets to run. Store the secrets as a single JSON file in Google Secret Manager before deployment.
+The backend requires the following secrets to run. All secrets should be stored as a single JSON file in Google Secret Manager before deployment.
 
 | **Secret**               | **Description**                                      |
 |--------------------------|------------------------------------------------------|
