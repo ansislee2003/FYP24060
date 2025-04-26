@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@google-cloud/secret-manager": "^6.0.1",
+    "@google-cloud/speech": "^7.0.1",
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.9",
+    "bcryptjs": "^3.0.2",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "deepl-node": "^1.17.3",
+    "express": "^4.17.1",
+    "express-session": "^1.18.1",
+    "microsoft-cognitiveservices-speech-sdk": "^1.43.1",
+    "mongoose": "^8.9.2",
+    "natural": "^8.0.1",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.8.1",
+    "socket.io-stream": "^0.9.1",
+    "wink-nlp-utils": "^2.1.0"
+  }
+}

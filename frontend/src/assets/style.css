@@ -1,0 +1,146 @@
+:root {
+    --primary: #1f2833;
+    --primary_light: #2A3440;
+    --primary_lighter: #5e6165;
+    --secondary: #59e9f9;
+    --secondary_dark: #229ac9;
+    --text: #e0e0e0;
+}
+
+.main_content {
+    max-height: 100vh;
+    max-width: 100vw;
+    /* display: flex;
+    flex-direction: column; */
+    /* height: 100%; */
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    min-width: 320px;
+    height: 100%;
+    width: 100%;
+    background-image: url("@/assets/home_background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.v-breadcrumbs {
+    width: 100%;
+    overflow: hidden;
+}
+
+.v-snackbar__underlay {
+    height: fit-content;
+    max-width: 100%;
+}
+
+.dialogBox {
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.dialogform {
+    padding: 0px 24px 16px 24px;
+}
+
+.defaultBtn {
+    min-height: 2.6rem;
+    min-width: 2.6rem;
+    color: var(--secondary);
+}
+.defaultBtn:hover {
+    color: var(--secondary_dark);
+}
+
+.defaultBtn_small {
+    min-height: 2rem;
+    min-width: 2rem;
+    color: var(--secondary);
+}
+.defaultBtn_small:hover {
+    color: var(--secondary_dark);
+}
+
+.iconBtn.v-btn {
+    min-height: 4rem;
+    min-width: 4rem;
+    border-radius: 50%;
+    background: var(--primary);
+    border: 1px solid var(--secondary);
+}
+.iconBtnIcon {
+    color: var(--secondary);
+    width: 35px;
+    height: 35px;
+}
+
+.cancelBtn {
+    background-color: transparent;
+    color: var(--text);
+}
+
+.spaceDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.centerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* scroll bars */
+*::-webkit-scrollbar {
+    width: 4px;
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--secondary_dark);
+    border-radius: 10px; /* Round edges of the scrollbar thumb */
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent; /* Color of the track */
+    border-radius: 10px; /* Round edges of the scrollbar track */
+}
+
+*::-webkit-scrollbar-button {
+    display: none;
+}
+
+html {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.breadcrumbs {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--secondary);
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+.v-progress-linear.progress_bar {
+    margin-bottom: 2rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.87) !important;
+}
